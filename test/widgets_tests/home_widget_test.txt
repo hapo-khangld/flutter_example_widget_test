@@ -1,0 +1,21 @@
+1: Test cho IconButton widget trên trang chủ: test này thực hiện kiểm tra xem khi người dùng nhấn vào IconButton, nó có hoạt động đúng không. Các bước thực hiện bao gồm:
+- Sử dụng hàm pumpWidget() để tạo ra một widget MyApp() và hiển thị nó lên màn hình ảo để test.
+- Sử dụng hàm tap() để mô phỏng một sự kiện nhấn vào IconButton đầu tiên trong trang chủ.
+- Sử dụng hàm pumpAndSettle() để đợi cho màn hình ảo được cập nhật sau khi sự kiện nhấn vào IconButton được mô phỏng.
+- Sử dụng hàm expect() để kiểm tra xem icon "favorite" có được hiển thị đúng không.
+
+
+2: Test cho SingleChildScrollView widget trên trang chủ: test này thực hiện kiểm tra xem các widget được lắp ráp trên SingleChildScrollView có đúng không. Các bước thực hiện bao gồm:
+- Sử dụng hàm pumpWidget() để tạo ra một widget MyApp() và hiển thị nó lên màn hình ảo để test.
+- Sử dụng hàm expect() để kiểm tra xem widget SingleChildScrollView có được hiển thị đúng không.
+- Sử dụng hàm expect() để kiểm tra xem widget Column có được hiển thị đúng không.
+- Sử dụng hàm expect() để kiểm tra xem có đúng 20 widget ListTile được hiển thị hay không.
+- Sử dụng vòng lặp for để kiểm tra xem tất cả các widget ListTile có hiển thị đúng với nội dung "Item $i" không.
+
+3: Test cho nút yêu thích trên trang chủ: test này thực hiện kiểm tra xem khi người dùng nhấn vào nút yêu
+thích, nó có chuyển hướng đến trang yêu thích (FavouritesPage) không. Các bước thực hiện bao gồm:
+
+- Sử dụng hàm pumpWidget() để tạo ra một widget MyApp() và hiển thị nó lên màn hình ảo để test.
+- Sử dụng hàm tap() để mô phỏng một sự kiện nhấn vào nút yêu thích.
+- Sử dụng hàm pumpAndSettle() để đợi cho màn hình ảo được cập nhật sau khi sự kiện nhấn vào nút yêu thích được mô phỏng.
+- Sử dụng hàm expect() để kiểm tra xem trang yêu thích (FavouritesPage) có được hiển thị đúng không
